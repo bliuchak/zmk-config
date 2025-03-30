@@ -127,7 +127,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-            label = "BaseA";
+            display-name = "BaseA";
         };
 
         lower_layer {
@@ -147,7 +147,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-            label = "LowerB";
+            display-name = "LowerB";
         };
 
         raise_layer {
@@ -167,7 +167,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-            label = "RaiseC";
+            display-name = "RaiseC";
         };
 
         adjust_layer {
