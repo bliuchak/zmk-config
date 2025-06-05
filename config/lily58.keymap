@@ -21,15 +21,11 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <175>;
+            quick-tap-ms = <125>;
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
-
-        // Sticky shift implementation
-        // Macro for common strings
-        // Key repeat behavior
 
         key_repeat: key_repeat {
             compatible = "zmk,behavior-key-repeat";
@@ -70,6 +66,12 @@
             timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&key_repeat>;
+        };
+
+        combo_enter {
+            timeout-ms = <50>;
+            key-positions = <19 20>;  // H + J
+            bindings = <&kp ENTER>;
         };
     };
 
