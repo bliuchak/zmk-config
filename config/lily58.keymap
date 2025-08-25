@@ -75,6 +75,18 @@
             key-positions = <19 20>;  // H + J
             bindings = <&kp ENTER>;
         };
+
+        left_combo_bspc {
+            bindings = <&kp BSPC>;
+            key-positions = <27 26>;
+            timeout-ms = <50>;
+        };
+
+        left_combo_del {
+            bindings = <&kp DEL>;
+            key-positions = <25 26>;
+            timeout-ms = <50>;
+        };
     };
 
     keymap {
