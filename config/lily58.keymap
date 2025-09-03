@@ -87,6 +87,12 @@
             key-positions = <25 26>;
             timeout-ms = <50>;
         };
+
+        combo_adjust {
+            bindings = <&mo ADJUST>;
+            key-positions = <37 40>;  // LOWER + RAISE keys
+            timeout-ms = <50>;
+        };
     };
 
     keymap {
@@ -105,7 +111,7 @@
 &kp TAB     &kp Q       &kp W       &kp E        &kp R        &kp T                                          &kp Y      &kp U        &kp I        &kp O       &kp P          &kp MINUS
 &kp LSHIFT  &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G                                          &kp H      &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMI  &kp SQT
 &kp LCTRL   &kp Z       &kp X       &kp C        &kp V        &kp B      &kp LBKT            &kp RBKT        &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH       &none
-                                    &kp LALT     &kp LGUI     &mo LOWER  &lt ADJUST SPACE    &lt ADJUST RET  &mo RAISE  &kp BSPC     &trans
+                                    &kp LALT     &kp LGUI     &mo LOWER  &kp SPACE           &kp RET         &mo RAISE  &kp BSPC     &mo ADJUST
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -129,7 +135,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-            display-name = "LowerB";
+            display-name = "Lower";
         };
 
         raise_layer {
@@ -149,7 +155,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-            display-name = "RaiseC";
+            display-name = "Raise";
         };
 
         adjust_layer {
@@ -169,6 +175,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            display-name = "Adjust";
         };
     };
 
