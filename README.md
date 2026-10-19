@@ -1,5 +1,7 @@
 # zmk-config
 
+![Lily58 keymap](keymap-drawer/lily58.svg)
+
 - https://nickcoutsos.github.io/keymap-editor/
 
 ## Notes
